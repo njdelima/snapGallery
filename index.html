@@ -1,5 +1,5 @@
 <div style="border: 1px solid" >
-	<ul id="snap-gallery">
+	<ul id="gallery-container">
 		<li><img src="./img/1.jpg" /></li>
 		<li><img src="./img/2.jpg" /></li>
 		<li><img src="./img/3.jpg" /></li>
@@ -16,3 +16,8 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+	$(function() { 
+		$('#gallery-container').snapGallery()
+	})
+</script>
