@@ -34,6 +34,8 @@
 			'display': 'inline-block',
 			'width': liWidth,
 			'margin': settings.margin + "px"
+		}).children("img").css({
+			'width': '100%'
 		});
 
 
