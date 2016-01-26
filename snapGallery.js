@@ -34,8 +34,7 @@
 		ul.children("li").css({
 			'display': 'inline-block',
 			'width': liWidth,
-			'margin-right': '-4px',
-			'margin-bottom': '-4px'
+			'margin-right': '-4px'
 			//'margin-right': (settings.margin - 4) + 'px',
 			//'margin-left': settings.margin + 'px'
 		}).children("img").css({
