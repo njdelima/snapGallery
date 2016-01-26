@@ -19,8 +19,19 @@
 			'list-style-type': 'none',
 			'padding': '0',
 			'margin': '0',
-			'background-color': settings.backgroundColor
+			'background-color': settings.backgroundColor,
+			'width': '100%'
 		});
+
+		console.log("ul.width = " + ul.width());
+		console.log("settings.margin = " + settings.margin);
+
+	//	var liWidth = (u
+
+	//	ul.children("li").css({
+	//		'display': 'inline-block',
+	//		'width': containerWi
+
 
 		return this;
 	};
