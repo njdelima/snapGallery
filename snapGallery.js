@@ -16,6 +16,8 @@
 			'padding': '0',
 			'margin': '0'
 		});
+
+		return this;
 	};
 
 }( jQuery ));
