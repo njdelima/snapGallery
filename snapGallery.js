@@ -33,7 +33,8 @@
 
 		ul.children("li").css({
 			'display': 'inline-block',
-			'width': liWidth
+			'width': liWidth,
+			'margin-right': '-4px'
 			//'margin': settings.margin + "px"
 		}).children("img").css({
 			'width': '100%'
