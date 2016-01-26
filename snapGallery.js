@@ -26,16 +26,15 @@
 		console.log("ul.width = " + ul.width());
 		console.log("settings.margin = " + settings.margin);
 
-		var liWidth = (ul.width() / 3);
-		// - (3 * settings.margin);
+		var liWidth = (ul.width() / 3) - (2 * settings.margin);
 
 		console.log("liWidth = " + liWidth);
 
 		ul.children("li").css({
 			'display': 'inline-block',
 			'width': liWidth,
-			'margin-right': '-4px'
-			//'margin': settings.margin + "px"
+			'margin-right': (settings.margin - 4) + 'px',
+			'margin-left': settings.margin + 'px'
 		}).children("img").css({
 			'width': '100%'
 		});
