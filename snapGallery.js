@@ -16,10 +16,10 @@
 		ul.css("box-sizing", "border-box").children("*").css("box-sizing", "border-box");
 
 		ul.css({
-			list-style-type: 'none',
-			padding: '0',
-			margin: '0',
-			backgroundColor: settings.backgroundColor
+			'list-style-type': 'none',
+			'padding': '0',
+			'margin': '0',
+			'background-color': settings.backgroundColor
 		});
 
 		return this;
