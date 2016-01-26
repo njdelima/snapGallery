@@ -5,7 +5,7 @@
 	}
 	
 	$.fn.snapGallery = function() {
-		var ul = $("#snap-gallery");
+		var ul = this;
 
 		ul.css({
 			'list-style-type': 'none',
