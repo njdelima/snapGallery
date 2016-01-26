@@ -38,7 +38,8 @@
 			//'margin-right': (settings.margin - 4) + 'px',
 			//'margin-left': settings.margin + 'px'
 		}).children("img").css({
-			'width': '100%'
+			'width': '100%',
+			'display': 'block'
 		});
 
 
