@@ -30,9 +30,11 @@
 
 		console.log("liWidth = " + liWidth);
 
-	//	ul.children("li").css({
-	//		'display': 'inline-block',
-	//		'width': containerWi
+		ul.children("li").css({
+			'display': 'inline-block',
+			'width': liWidth,
+			'margin': settings.margin + "px"
+		});
 
 
 		return this;
