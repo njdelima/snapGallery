@@ -26,7 +26,7 @@
 		console.log("ul.width = " + ul.width());
 		console.log("settings.margin = " + settings.margin);
 
-		var liWidth = (ul.width() / 3) - (2 * settings.margin);
+		var liWidth = (ul.width() / 3) - (3 * settings.margin);
 
 		console.log("liWidth = " + liWidth);
 
