@@ -8,7 +8,7 @@
 		var ul = this;
 
 		var settings = $.extend({
-			margin: "10px",
+			margin: "10",
 			backgroundColor: "blue"
 		}, options);
 
@@ -26,7 +26,9 @@
 		console.log("ul.width = " + ul.width());
 		console.log("settings.margin = " + settings.margin);
 
-	//	var liWidth = (u
+		var liWidth = (ul.width() / 3) - (2 * settings.margin);
+
+		console.log("liWidth = " + liWidth);
 
 	//	ul.children("li").css({
 	//		'display': 'inline-block',
