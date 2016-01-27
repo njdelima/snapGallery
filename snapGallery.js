@@ -67,9 +67,9 @@
 			}
 		});
 
-		var containerHeight = Math.max(topTracker[0], topTracker[1], topTracker[2]) - 10;
+		var containerHeight = Math.max(topTracker[0], topTracker[1], topTracker[2]);
 
-		this.css("height", containerHeight);
+		this.css("height", containerHeight - 10);
 
 		for (var i = 0; i < topTracker.length; i++) {
 			var curMargin = 0;
