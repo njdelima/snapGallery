@@ -11,6 +11,15 @@
 	$.fn.snapGallery = function(options) {
 		var ul = this;
 
+
+		ul.children("li").each(function (index) {
+			console.log( "index = " + index);
+		});
+		
+		var lis = ul.children("li");
+
+
+
 		var settings = $.extend({
 			margin: "10",
 			backgroundColor: "blue"
