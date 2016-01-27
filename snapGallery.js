@@ -48,21 +48,21 @@
 					'top': topTracker[0],
 					'left': 0
 				});
-				topTracker[0] = topTracker[0] + $(this).height();
+				topTracker[0] = topTracker[0] + $(this).height() + 10;
 				$(this).addClass("col0");
 			} else if (index % 3 === 1) {
 				$(this).css({
 					'top': topTracker[1],
 					'left': $(this).width() + 15
 				});
-				topTracker[1] = topTracker[1] + $(this).height();
+				topTracker[1] = topTracker[1] + $(this).height() + 10;
 				$(this).addClass("col1");
 			} else if (index % 3 === 2) {
 				$(this).css({
 					'top': topTracker[2],
 					'left': $(this).width() * 2 + 30
 				});
-				topTracker[2] = topTracker[2] + $(this).height();
+				topTracker[2] = topTracker[2] + $(this).height() + 10;
 				$(this).addClass("col2");
 			}
 		});
