@@ -5,7 +5,7 @@
 	}
 	
 	$( window ).resize(function() {
-		alert("HI");
+		$('#gallery-container').snapGallery();
 	});
 
 	$.fn.snapGallery = function(options) {
