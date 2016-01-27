@@ -53,14 +53,14 @@
 			} else if (index % 3 === 1) {
 				$(this).css({
 					'top': topTracker[1],
-					'left': $(this).width() + 10
+					'left': $(this).width() + 15
 				});
 				topTracker[1] = topTracker[1] + $(this).height();
 				$(this).addClass("col1");
 			} else if (index % 3 === 2) {
 				$(this).css({
 					'top': topTracker[2],
-					'left': $(this).width() * 2
+					'left': $(this).width() * 2 + 30
 				});
 				topTracker[2] = topTracker[2] + $(this).height();
 				$(this).addClass("col2");
