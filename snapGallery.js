@@ -43,19 +43,19 @@
 		this.children("li").each(function (index) {
 			console.log( "index = " + index);
 			if (index % 3 === 0) {
-				this.css({
+				$(this).css({
 					'top': topTracker[0],
 					'left': 0
 				});
 				topTracker[0] = topTracker[0] + this.height();
 			} else if (index % 3 === 1) {
-				this.css({
+				$(this).css({
 					'top': topTracker[1],
 					'left': this.width()
 				});
 				topTracker[1] = topTracker[1] + this.height();
 			} else if (index % 3 === 2) {
-				this.css({
+				$(this).css({
 					'top': topTracker[2],
 					'left': this.width() * 2
 				});
