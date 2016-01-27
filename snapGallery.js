@@ -16,8 +16,8 @@
 		}, options);
 
 		var containerWidth = this.width();
+		console.log("containerWidth = " + containerWidth);
 		containerWidth = this.width();
-		
 		console.log("containerWidth = " + containerWidth);
 
 
