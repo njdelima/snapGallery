@@ -51,6 +51,7 @@
 					'top': topTracker[0],
 					'left': 0
 				});
+				console.log("settings.margin = " + settings.margin);
 				topTracker[0] = topTracker[0] + $(this).height() + settings.margin;
 				console.log("topTracker[0] = " + topTracker[0]);
 				$(this).addClass("col0");
