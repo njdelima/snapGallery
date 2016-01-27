@@ -49,18 +49,21 @@
 					'left': 0
 				});
 				topTracker[0] = topTracker[0] + $(this).height();
+				$(this).addClass("col0");
 			} else if (index % 3 === 1) {
 				$(this).css({
 					'top': topTracker[1],
 					'left': $(this).width()
 				});
 				topTracker[1] = topTracker[1] + $(this).height();
+				$(this).addClass("col1");
 			} else if (index % 3 === 2) {
 				$(this).css({
 					'top': topTracker[2],
 					'left': $(this).width() * 2
 				});
 				topTracker[2] = topTracker[2] + $(this).height();
+				$(this).addClass("col2");
 			}
 		});
 
@@ -68,9 +71,15 @@
 
 		this.css("height", containerHeight);
 
-//		for (var i = 0; i < topTracker.length; i++) {
-//			while (topTracker[i] < containerHeight
-//		}
+		for (var i = 0; i < topTracker.length; i++) {
+			var curMargin = 0;
+			while ((topTracker[i] + curMargin) < containerHeight) {
+				curMargin = curMargin + 1;
+			}
+			var curColumn = $("li.col" + i);
+			console.log("curColumn.length = " + curColumn.length);
+			console.log("margin = " + curMargin);
+		}
 
 		return this;
 	};
