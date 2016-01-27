@@ -16,9 +16,7 @@
 		}, options);
 
 		var containerWidth = this.width();
-		setTimeout(function() {
-			console.log("containerWidth = " + containerWidth);
-		}, 100);
+		console.log("containerWidth = " + containerWidth);
 
 		var topTracker = [0, 0, 0];
 
