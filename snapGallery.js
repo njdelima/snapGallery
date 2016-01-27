@@ -12,7 +12,7 @@
 		
 		var settings = $.extend({
 			margin: "10",
-			backgroundColor: "blue"
+			cols: "3"
 		}, options);
 
 		var containerWidth = this.width();
@@ -31,9 +31,12 @@
 			'width': '100%'
 		});
 
+		var imgWidth = (containerWidth / settings.cols) - (settings.margin * ( (settings.cols - 1) / settings.cols));
+
+
 		this.children("li").css({
 			'display': 'inline-block',
-			'width': (containerWidth / 3) - 10,
+			'width': imgWidth,
 			'margin-right': '-4px',
 			'position': 'absolute'
 		}).children("img").css({
@@ -48,28 +51,28 @@
 					'top': topTracker[0],
 					'left': 0
 				});
-				topTracker[0] = topTracker[0] + $(this).height() + 10;
+				topTracker[0] = topTracker[0] + $(this).height() + settings.margin;
 				$(this).addClass("col0");
 			} else if (index % 3 === 1) {
 				$(this).css({
 					'top': topTracker[1],
-					'left': $(this).width() + 15
+					'left': $(this).width() + settings.margin
 				});
-				topTracker[1] = topTracker[1] + $(this).height() + 10;
+				topTracker[1] = topTracker[1] + $(this).height() + settings.margin;
 				$(this).addClass("col1");
 			} else if (index % 3 === 2) {
 				$(this).css({
 					'top': topTracker[2],
-					'left': $(this).width() * 2 + 30
+					'left': ($(this).width() * 2) + (settings.margin * 2)
 				});
-				topTracker[2] = topTracker[2] + $(this).height() + 10;
+				topTracker[2] = topTracker[2] + $(this).height() + settings.margin;
 				$(this).addClass("col2");
 			}
 		});
 
 		var containerHeight = Math.max(topTracker[0], topTracker[1], topTracker[2]);
 
-		this.css("height", containerHeight - 10);
+		this.css("height", containerHeight - settings.margin);
 
 		for (var i = 0; i < topTracker.length; i++) {
 			var curMargin = 0;
