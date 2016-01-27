@@ -53,7 +53,7 @@
 			} else if (index % 3 === 1) {
 				$(this).css({
 					'top': topTracker[1],
-					'left': $(this).width()
+					'left': $(this).width() + 10
 				});
 				topTracker[1] = topTracker[1] + $(this).height();
 				$(this).addClass("col1");
