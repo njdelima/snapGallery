@@ -16,11 +16,9 @@
 		}, options);
 
 		var containerWidth = this.width();
-		console.log("containerWidth = " + containerWidth);
-		$(window).trigger('resize');
-		console.log("containerWidth = " + containerWidth);
-
-
+		setTimeout(function() {
+			console.log("containerWidth = " + containerWidth);
+		});
 
 		var topTracker = [0, 0, 0];
 
