@@ -64,6 +64,14 @@
 			}
 		});
 
+		var containerHeight = Math.max(topTracker[0], topTracker[1], topTracker[2]);
+
+		this.css("height", containerHeight);
+
+//		for (var i = 0; i < topTracker.length; i++) {
+//			while (topTracker[i] < containerHeight
+//		}
+
 		return this;
 	};
 
