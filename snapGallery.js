@@ -52,6 +52,9 @@
 					'left': 0
 				});
 				console.log("settings.margin = " + settings.margin);
+				console.log("$(this).height() = " + $(this).height());
+				var x = settings.margin + $(this).height();
+				console.log("addition = " + x);
 				topTracker[0] = topTracker[0] + $(this).height() + settings.margin;
 				console.log("topTracker[0] = " + topTracker[0]);
 				$(this).addClass("col0");
