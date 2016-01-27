@@ -17,9 +17,7 @@
 
 		var containerWidth = this.width();
 		console.log("containerWidth = " + containerWidth);
-		window.setTimeout(function() {
-			containerWidth = this.width();
-		}, 10000);
+		$(window).trigger('resize');
 		console.log("containerWidth = " + containerWidth);
 
 
