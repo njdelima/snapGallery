@@ -81,7 +81,7 @@
 
 				var offset = curMargin / (curColumn.length - 1);
 
-				console.log("position = " + $(curColumn.get(0)).position());
+				console.log("position = " + $(curColumn.get(0)).position().top);
 				for (var j = 1; j < curColumn.length; j++) {
 					curColumn[j].css("top", curColumn[j].position().top + offset * j);
 				}
