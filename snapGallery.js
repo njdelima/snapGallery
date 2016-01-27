@@ -17,7 +17,7 @@
 
 		var containerWidth = this.width();
 		console.log("containerWidth = " + containerWidth);
-		setTimeout(function() {
+		window.setTimeout(function() {
 			containerWidth = this.width();
 		}, 10000);
 		console.log("containerWidth = " + containerWidth);
