@@ -32,7 +32,7 @@
 		});
 
 		var imgWidth = (containerWidth / settings.cols) - (settings.margin * ( (settings.cols - 1) / settings.cols));
-
+		console.log("imgWidth = " + imgWidth);
 
 		this.children("li").css({
 			'display': 'inline-block',
@@ -52,6 +52,7 @@
 					'left': 0
 				});
 				topTracker[0] = topTracker[0] + $(this).height() + settings.margin;
+				console.log("topTracker[0] = " + topTracker[0]);
 				$(this).addClass("col0");
 			} else if (index % 3 === 1) {
 				$(this).css({
@@ -59,6 +60,7 @@
 					'left': $(this).width() + settings.margin
 				});
 				topTracker[1] = topTracker[1] + $(this).height() + settings.margin;
+				console.log("topTracker[1] = " + topTracker[1]);
 				$(this).addClass("col1");
 			} else if (index % 3 === 2) {
 				$(this).css({
@@ -66,11 +68,13 @@
 					'left': ($(this).width() * 2) + (settings.margin * 2)
 				});
 				topTracker[2] = topTracker[2] + $(this).height() + settings.margin;
+				console.log("topTracker[2] = " + topTracker[2]);
 				$(this).addClass("col2");
 			}
 		});
 
 		var containerHeight = Math.max(topTracker[0], topTracker[1], topTracker[2]);
+		console.log("containerHeight = " + containerHeight);
 
 		this.css("height", containerHeight - settings.margin);
 
