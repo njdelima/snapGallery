@@ -76,12 +76,14 @@
 			while ((topTracker[i] + curMargin) < containerHeight) {
 				curMargin = curMargin + 1;
 			}
+			if (curMargin > 0) {
+				var curColumn = $("li.col" + i);
 
-			var curColumn = $("li.col" + i);
-			curColumn.css({
-				'top': $(this).position().top + curMargin / (curColumn.length - 1)
-			});
+				var offset = curMargin / (curColumn.length - 1);
 
+				for (var j = 1; j < curColumn.length; j++) {
+					curColumn[j].css("top", curColumn[j].position().top + offset * j);
+				}
 		}
 
 		return this;
