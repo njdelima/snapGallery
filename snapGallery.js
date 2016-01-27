@@ -71,15 +71,17 @@
 
 		this.css("height", containerHeight);
 
-		for (var i = 0; i < topTracker.length-1; i++) {
+		for (var i = 0; i < topTracker.length; i++) {
 			var curMargin = 0;
 			while ((topTracker[i] + curMargin) < containerHeight) {
 				curMargin = curMargin + 1;
 			}
-			var curColumn = $("li.col" + i).hide();
 
-			console.log("curColumn.length = " + curColumn.length);
-			console.log("margin = " + curMargin);
+			var curColumn = $("li.col" + i);
+			curColumn.css({
+				'top': $(this).position().top + curMargin / (curColumn.length - 1)
+			});
+
 		}
 
 		return this;
