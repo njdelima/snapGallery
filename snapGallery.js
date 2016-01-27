@@ -33,7 +33,7 @@
 
 		this.children("li").css({
 			'display': 'inline-block',
-			'width': containerWidth / 3,
+			'width': (containerWidth / 3) - 10,
 			'margin-right': '-4px',
 			'position': 'absolute'
 		}).children("img").css({
