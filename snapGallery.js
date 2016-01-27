@@ -11,8 +11,8 @@
 	$.fn.snapGallery = function(options) {
 		
 		var settings = $.extend({
-			margin: "10",
-			cols: "3"
+			margin: 10,
+			cols: 3
 		}, options);
 
 		var containerWidth = this.width();
