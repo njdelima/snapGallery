@@ -18,7 +18,11 @@
 		var containerWidth = this.width();
 		console.log("containerWidth = " + containerWidth);
 
-		var topTracker = [0, 0, 0];
+		var topTracker = [];
+
+		for (var i = 0; i < settings.cols; i++) {
+			topTracker.push(0);
+		}
 
 		this.css("box-sizing", "border-box").children("*").css("box-sizing", "border-box");
 
@@ -46,38 +50,19 @@
 
 		this.children("li").each(function (index) {
 			console.log( "index = " + index);
-			if (index % 3 === 0) {
-				$(this).css({
-					'top': topTracker[0],
-					'left': 0
-				});
-				console.log("settings.margin = " + settings.margin);
-				console.log("$(this).height() = " + $(this).height());
-				var x = settings.margin + $(this).height();
-				console.log("addition = " + x);
-				topTracker[0] = topTracker[0] + $(this).height() + settings.margin;
-				console.log("topTracker[0] = " + topTracker[0]);
-				$(this).addClass("col0");
-			} else if (index % 3 === 1) {
-				$(this).css({
-					'top': topTracker[1],
-					'left': $(this).width() + settings.margin
-				});
-				topTracker[1] = topTracker[1] + $(this).height() + settings.margin;
-				console.log("topTracker[1] = " + topTracker[1]);
-				$(this).addClass("col1");
-			} else if (index % 3 === 2) {
-				$(this).css({
-					'top': topTracker[2],
-					'left': ($(this).width() * 2) + (settings.margin * 2)
-				});
-				topTracker[2] = topTracker[2] + $(this).height() + settings.margin;
-				console.log("topTracker[2] = " + topTracker[2]);
-				$(this).addClass("col2");
-			}
+			var colNumber = index % settings.cols;
+
+			$(this).css({
+				'top': topTracker[colNumber],
+				'left': ( $(this).width() + settings.margin ) * colNumber
+			});
+
+			topTracker[colNumber] = topTracker[colNumber] + $(this).height() + settings.margin;
+			console.log("topTracker[" + colNumber + "] = " + topTracker[colNumber]);
+			$(this).addClass("col" + colNumber);
 		});
 
-		var containerHeight = Math.max(topTracker[0], topTracker[1], topTracker[2]);
+		var containerHeight = Math.max.apply(Math, topTracker);
 		console.log("containerHeight = " + containerHeight);
 
 		this.css("height", containerHeight - settings.margin);
