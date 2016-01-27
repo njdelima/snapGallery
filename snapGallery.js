@@ -84,6 +84,7 @@
 				for (var j = 1; j < curColumn.length; j++) {
 					curColumn[j].css("top", curColumn[j].position().top + offset * j);
 				}
+			}
 		}
 
 		return this;
