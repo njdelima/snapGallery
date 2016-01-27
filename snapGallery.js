@@ -19,7 +19,7 @@
 		console.log("containerWidth = " + containerWidth);
 		setTimeout(function() {
 			containerWidth = this.width();
-		}, 5000);
+		}, 10000);
 		console.log("containerWidth = " + containerWidth);
 
 
