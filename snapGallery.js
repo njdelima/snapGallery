@@ -4,6 +4,10 @@
 		return console.warn("snapGallery needs jQuery!");
 	}
 	
+	$( window ).resize(function() {
+		alert("HI");
+	});
+
 	$.fn.snapGallery = function(options) {
 		var ul = this;
 
