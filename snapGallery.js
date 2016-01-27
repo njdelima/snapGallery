@@ -18,7 +18,7 @@
 		var containerWidth = this.width();
 		setTimeout(function() {
 			console.log("containerWidth = " + containerWidth);
-		});
+		}, 0);
 
 		var topTracker = [0, 0, 0];
 
