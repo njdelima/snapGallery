@@ -19,8 +19,10 @@
 <script src="./snapGallery.js"></script>
 <script>
 	$(function() { 
-		$( document ).click(function() {
-			$('#gallery-container').snapGallery()
+		$( document ).ready(function() {
+			$( window ).load(function() {
+				$('#gallery-container').snapGallery();
+			});
 		});
 	})
 </script>
