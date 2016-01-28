@@ -30,15 +30,15 @@
 			'width': '100%'
 		});
 
-		var currentCols = settings.maxCols;
+		var currentCols = settings.maxCols + 1;
 		console.log("currentCols = " + currentCols);
 
-//		do {
-//			currentCols = currentCols - 1;
+		do {
+			currentCols = currentCols - 1;
 			console.log("currentCols = " + currentCols);
 			var imgWidth = (containerWidth / currentCols) - (settings.margin * ( (currentCols - 1) / currentCols));
 			console.log("imgWidth = " + imgWidth);
-//		} while (imgWidth < settings.minWidth);
+		} while (imgWidth < settings.minWidth);
 
 		console.log("currentCols = " + currentCols);
 		console.log("imgWidth = " + imgWidth);
