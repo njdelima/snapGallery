@@ -45,7 +45,7 @@
 
 		var topTracker = [];
 
-		for (var i = 0; i < settings.currentCols; i++) {
+		for (var i = 0; i < currentCols; i++) {
 			topTracker.push(0);
 		}
 
