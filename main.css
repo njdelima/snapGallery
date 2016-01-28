@@ -1,5 +1,13 @@
 body {
 	background: url('felt.png');
 	color: white;
-	
+
+}
+
+h1 {
+	font-family: Montserrat, sans-serif;
+}
+
+p {
+	font-family: 'PT Sans', sans-serif;
 }
