@@ -12,7 +12,7 @@
 		
 		var settings = $.extend({
 			margin: 10,
-			maxCols: 3,
+			maxCols: 2,
 			minWidth: 400
 		}, options);
 
