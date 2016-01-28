@@ -20,7 +20,7 @@
 			minWidth: 300
 		}, options);
 
-		var containerWidth = this.width();
+		var containerWidth = this.outerWidth();
 		console.log("containerWidth = " + containerWidth);
 
 		this.css("box-sizing", "border-box").children("*").css("box-sizing", "border-box");
