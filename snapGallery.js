@@ -34,7 +34,7 @@
 		console.log("currentCols = " + currentCols);
 
 //		do {
-			currentCols = currentCols - 1;
+//			currentCols = currentCols - 1;
 			console.log("currentCols = " + currentCols);
 			var imgWidth = (containerWidth / currentCols) - (settings.margin * ( (currentCols - 1) / currentCols));
 			console.log("imgWidth = " + imgWidth);
