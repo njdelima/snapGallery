@@ -72,6 +72,7 @@
 
 			topTracker[colNumber] = topTracker[colNumber] + $(this).height() + settings.margin;
 			console.log("topTracker[" + colNumber + "] = " + topTracker[colNumber]);
+			$(this).removeClass("col1").removeClass("col0");
 			$(this).addClass("col" + colNumber);
 		});
 
