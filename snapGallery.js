@@ -30,13 +30,13 @@
 			'width': '100%'
 		});
 
-		var currentCols = settings.maxCols + 1;
+		var currentCols = settings.maxCols;
 		console.log("currentCols = " + currentCols);
 
 //		do {
 			currentCols = currentCols - 1;
 			console.log("currentCols = " + currentCols);
-			var imgWidth = (containerWidth / settings.maxCols) - (settings.margin * ( (settings.maxCols - 1) / settings.maxCols));
+			var imgWidth = (containerWidth / currentCols) - (settings.margin * ( (currentCols - 1) / currentCols));
 			console.log("imgWidth = " + imgWidth);
 //		} while (imgWidth < settings.minWidth);
 
@@ -45,7 +45,7 @@
 
 		var topTracker = [];
 
-		for (var i = 0; i < settings.maxCols; i++) {
+		for (var i = 0; i < settings.currentCols; i++) {
 			topTracker.push(0);
 		}
 
@@ -63,7 +63,7 @@
 
 		this.children("li").each(function (index) {
 			console.log( "index = " + index);
-			var colNumber = index % settings.maxCols;
+			var colNumber = index % currentCols;
 
 			$(this).css({
 				'top': topTracker[colNumber],
