@@ -33,10 +33,10 @@
 		var currentCols = settings.maxCols + 1;
 		console.log("currentCols = " + currentCols);
 
-		do {
+//		do {
 			currentCols = currentCols - 1;
 			console.log("currentCols = " + currentCols);
-			var imgWidth = (containerWidth / currentCols) - (settings.margin * ( (currentCols - 1) / currentCols));
+			var imgWidth = (containerWidth / settings.maxCols) - (settings.margin * ( (settings.maxCols - 1) / settings.maxCols));
 			console.log("imgWidth = " + imgWidth);
 		} while (imgWidth < settings.minWidth);
 
@@ -45,7 +45,7 @@
 
 		var topTracker = [];
 
-		for (var i = 0; i < currentCols; i++) {
+		for (var i = 0; i < settings.maxCols; i++) {
 			topTracker.push(0);
 		}
 
@@ -63,7 +63,7 @@
 
 		this.children("li").each(function (index) {
 			console.log( "index = " + index);
-			var colNumber = index % currentCols;
+			var colNumber = index % settings.maxCols;
 
 			$(this).css({
 				'top': topTracker[colNumber],
