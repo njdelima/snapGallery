@@ -36,7 +36,7 @@
 		do {
 			currentCols = currentCols - 1;
 			console.log("currentCols = " + currentCols);
-			var imgWidth = (containerWidth / settings.currentCols) - (settings.margin * ( (settings.currentCols - 1) / settings.currentCols));
+			var imgWidth = (containerWidth / currentCols) - (settings.margin * ( (currentCols - 1) / currentCols));
 			console.log("imgWidth = " + imgWidth);
 		} while (imgWidth < settings.minWidth);
 
@@ -45,7 +45,7 @@
 
 		var topTracker = [];
 
-		for (var i = 0; i < settings.currentCols; i++) {
+		for (var i = 0; i < currentCols; i++) {
 			topTracker.push(0);
 		}
 
