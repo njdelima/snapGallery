@@ -12,17 +12,12 @@
 		
 		var settings = $.extend({
 			margin: 10,
-			cols: 3
+			maxCols: 3,
+			minWidth: 200
 		}, options);
 
 		var containerWidth = this.width();
 		console.log("containerWidth = " + containerWidth);
-
-		var topTracker = [];
-
-		for (var i = 0; i < settings.cols; i++) {
-			topTracker.push(0);
-		}
 
 		this.css("box-sizing", "border-box").children("*").css("box-sizing", "border-box");
 
@@ -35,8 +30,19 @@
 			'width': '100%'
 		});
 
-		var imgWidth = (containerWidth / settings.cols) - (settings.margin * ( (settings.cols - 1) / settings.cols));
-		console.log("imgWidth = " + imgWidth);
+		var currentCols = settings.maxCols + 1;
+
+		while (imgWidth < settings.minWidth) {
+			currentCols = currentCols - 1;
+			var imgWidth = (containerWidth / settings.currentCols) - (settings.margin * ( (settings.currentCols - 1) / settings.currentCols));
+			console.log("imgWidth = " + imgWidth);
+		}
+
+		var topTracker = [];
+
+		for (var i = 0; i < settings.currentCols; i++) {
+			topTracker.push(0);
+		}
 
 		this.children("li").css({
 			'display': 'inline-block',
@@ -50,7 +56,7 @@
 
 		this.children("li").each(function (index) {
 			console.log( "index = " + index);
-			var colNumber = index % settings.cols;
+			var colNumber = index % currentCols;
 
 			$(this).css({
 				'top': topTracker[colNumber],
