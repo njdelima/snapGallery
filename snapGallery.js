@@ -33,11 +33,11 @@
 		var currentCols = settings.maxCols + 1;
 		console.log("currentCols = " + currentCols);
 
-		while (imgWidth < settings.minWidth) {
+		do {
 			currentCols = currentCols - 1;
 			var imgWidth = (containerWidth / settings.currentCols) - (settings.margin * ( (settings.currentCols - 1) / settings.currentCols));
 			console.log("imgWidth = " + imgWidth);
-		}
+		} while (imgWidth < settings.minWidth);
 
 		console.log("currentCols = " + currentCols);
 		console.log("imgWidth = " + imgWidth);
@@ -49,7 +49,7 @@
 		}
 
 		console.log("topTracker = " + topTracker);
-		
+
 		this.children("li").css({
 			'display': 'inline-block',
 			'width': imgWidth,
