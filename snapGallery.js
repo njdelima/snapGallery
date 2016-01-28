@@ -13,7 +13,8 @@
 		var settings = $.extend({
 			margin: 10,
 			maxCols: 3,
-			minWidth: 300
+			minWidth: 300,
+			preserveOrder: true
 		}, options);
 
 		var containerWidth = this.outerWidth();
@@ -60,6 +61,13 @@
 			'width': '100%',
 			'display': 'block'
 		});
+
+		this.children("li").mouseenter(function() {
+			$(this).css("opacity", 0.6);
+		}).mouseleave(function() {
+			$(this).css("opacity", 1);
+		});
+
 
 		this.children("li").each(function (index) {
 			console.log( "index = " + index);
