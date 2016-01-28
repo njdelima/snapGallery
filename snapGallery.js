@@ -38,7 +38,7 @@
 			console.log("currentCols = " + currentCols);
 			var imgWidth = (containerWidth / settings.maxCols) - (settings.margin * ( (settings.maxCols - 1) / settings.maxCols));
 			console.log("imgWidth = " + imgWidth);
-		} while (imgWidth < settings.minWidth);
+//		} while (imgWidth < settings.minWidth);
 
 		console.log("currentCols = " + currentCols);
 		console.log("imgWidth = " + imgWidth);
