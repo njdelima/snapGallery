@@ -65,7 +65,9 @@
 	<script>
 		$(function() {
 			$(document).ready(function() {
-				console.log($("#main-toggle").prop());
+				$("#main-toggle").change(function() {
+					console.log(this.checked);
+				});
 			});
 		});
 	</script>
