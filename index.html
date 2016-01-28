@@ -20,8 +20,10 @@
 	Check out the magic below!</p>
 
 	<div>
-		<input class='tgl tgl-ios' id='cb2' type='checkbox'>
-    	<label class='tgl-btn' for='cb2'></label>
+		<div class="control-panel">
+			<input class='tgl tgl-ios' id='main-toggle' type='checkbox'>
+    		<label class='tgl-btn' for='main-toggle'></label>
+    	</div>
 		<ul id="gallery-container">
 			<li><img src="./img/1.jpg" /></li>
 			<li><img src="./img/2.jpg" /></li>
@@ -59,6 +61,13 @@
 		$(function() {
 			$('#gallery-container').snapGallery();
 		})
+	</script>
+	<script>
+		$(function() {
+			$(document).ready(function() {
+				console.log($("#main-toggle").prop());
+			});
+		});
 	</script>
 
 </body>
