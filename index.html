@@ -33,8 +33,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="./snapGallery.js"></script>
 <script>
-	$(function() { 
-		$('#gallery-container').snapGallery();
-		
+	$(function() {
+		$(document).ready(function() {
+			$('#gallery-container').snapGallery();
+		});
+
 	})
 </script>
