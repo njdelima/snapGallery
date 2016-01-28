@@ -63,7 +63,7 @@
 		});
 
 		this.children("li").mouseenter(function() {
-			$(this).css("opacity", 0.6);
+			$(this).css("opacity", 0.8);
 		}).mouseleave(function() {
 			$(this).css("opacity", 1);
 		});
