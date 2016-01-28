@@ -8,6 +8,10 @@
 		$('#gallery-container').snapGallery();
 	});
 
+	$( document ).ready(function() {
+		$('#gallery-container').snapGallery();
+	});
+
 	$.fn.snapGallery = function(options) {
 		
 		var settings = $.extend({
