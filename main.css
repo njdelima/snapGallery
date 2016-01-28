@@ -1,7 +1,7 @@
 body {
 	background: black;
-	background: -webkit-radial-gradient(#555 20%, #000 80%);
-	background: -o-radial-gradient(#555 20%, #000 80%);
-	background: -moz-radial-gradient(#555 20%, #000 80%);
-	background: radial-gradient(#555 20%, #000 80%);
+//	background: -webkit-radial-gradient(#555 20%, #000 80%);
+//	background: -o-radial-gradient(#555 20%, #000 80%);
+//	background: -moz-radial-gradient(#555 20%, #000 80%);
+	background: radial-gradient(#333 20%, #000 80%);
 }
