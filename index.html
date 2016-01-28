@@ -69,6 +69,7 @@
 					if (this.checked) {
 						$('#gallery-container').snapGallery();
 					} else {
+						$('#gallery-container').removeAttr('style');
 						$('#gallery-container *').removeAttr('style');
 					}
 				});
