@@ -31,6 +31,7 @@
 		});
 
 		var currentCols = settings.maxCols + 1;
+		console.log("currentCols = " + currentCols);
 
 		while (imgWidth < settings.minWidth) {
 			currentCols = currentCols - 1;
@@ -38,12 +39,17 @@
 			console.log("imgWidth = " + imgWidth);
 		}
 
+		console.log("currentCols = " + currentCols);
+		console.log("imgWidth = " + imgWidth);
+
 		var topTracker = [];
 
 		for (var i = 0; i < settings.currentCols; i++) {
 			topTracker.push(0);
 		}
 
+		console.log("topTracker = " + topTracker);
+		
 		this.children("li").css({
 			'display': 'inline-block',
 			'width': imgWidth,
