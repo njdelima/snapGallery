@@ -13,7 +13,7 @@
 		var settings = $.extend({
 			margin: 10,
 			maxCols: 4,
-			minWidth: 300
+			minWidth: 700
 		}, options);
 
 		var containerWidth = this.width();
