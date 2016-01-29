@@ -23,6 +23,9 @@
 		<div class="control-panel">
 			<input class='tgl tgl-ios' id='main-toggle' type='checkbox'>
     		<label class='tgl-btn' for='main-toggle'></label>
+    		<input type="number" min="1" step="1" id="columns-spec" />
+    		<input type="number" min="0" step="1" id="width-spec" />
+    	</div>
     	</div>
 		<ul id="gallery-container">
 			<li><img src="./img/1.jpg" /></li>
@@ -72,6 +75,13 @@
 						$('#gallery-container').removeAttr('style');
 						$('#gallery-container *').removeAttr('style');
 					}
+				});
+				$("#width-spec").change(function() {
+					console.log("width-spec = " + $(this).value();
+				});
+
+				$("#columns-spec").change(function() {
+					console.log("width-spec = " + $(this).value();
 				});
 			});
 		});
