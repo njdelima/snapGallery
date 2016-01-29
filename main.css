@@ -24,6 +24,8 @@ p {
   font-family: Oswald, sans-serif;
   position: relative;
   height: 50px;
+  border: 2px solid black;
+  background-color: rgba(255,255,255,0.2);
 }
 
 .control-panel-label {
@@ -53,11 +55,10 @@ p {
   position: absolute;
   left: 50%;
   width: 150px;
-  font-size: 1.5em;
+  font-size: 1.8em;
   text-align: center;
   margin-left: -75px;
   font-weight: 300;
-  padding: 7px;
 }
 
 .control-panel .spec-group {
@@ -84,8 +85,8 @@ p {
 .tgl + .tgl-btn {
   outline: 0;
   display: inline-block;
-  width: 4em;
-  height: 2em;
+  width: 7em;
+  height: 3em;
   position: relative;
   cursor: pointer;
   -webkit-user-select: none;
@@ -112,14 +113,14 @@ p {
 
 .tgl-ios + .tgl-btn {
   background: #fbfbfb;
-  border-radius: 0.2em;
+  border-radius: 0.5em;
   padding: 2px;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
 //  border: 1px solid #e8eae9;
 }
 .tgl-ios + .tgl-btn:after {
-  border-radius: 0.2em;
+  border-radius: 0.5em;
   background: #fbfbfb;
   -webkit-transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
   transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
