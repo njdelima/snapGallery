@@ -77,11 +77,15 @@
 					}
 				});
 				$("#width-spec").change(function() {
-					console.log("width-spec = " + $(this).val());
+					$('#gallery-container').snapGallery({
+						minWidth: $(this).val();
+					});
 				});
 
 				$("#columns-spec").change(function() {
-					console.log("width-spec = " + $(this).val());
+					$('#gallery-container').snapGallery({
+						maxCols: $(this).val();
+					});
 				});
 			});
 		});
