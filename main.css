@@ -11,6 +11,14 @@ h1 {
 
 }
 
+a.download-button {
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
 p {
 	font-family: 'PT Sans', sans-serif;
 	line-height: 150%;
