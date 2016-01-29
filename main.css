@@ -34,7 +34,7 @@ p {
 }
 .tgl + .tgl-btn {
   outline: 0;
-  display: block;
+  display: inline-block;
   width: 4em;
   height: 2em;
   position: relative;
