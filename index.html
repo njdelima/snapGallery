@@ -62,9 +62,7 @@
 	<script src="./snapGallery.js"></script>
 	<script>
 		$(function() {
-			$('#gallery-container').snapGallery({
-				maxCols: 2
-			});
+			$('#gallery-container').snapGallery();
 		})
 	</script>
 	<script>
@@ -88,7 +86,7 @@
 				$("#columns-spec").change(function() {
 					console.log("Made it! value = " + $(this).val());
 					$('#gallery-container').snapGallery({
-						maxCols: $(this).val()
+						maxCols: 2
 					});
 				});
 			});
