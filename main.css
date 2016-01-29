@@ -22,6 +22,8 @@ p {
   color: #000;
   background-color: #ccc;
   font-family: Oswald, sans-serif;
+  position: relative;
+  height: 50px;
 }
 
 .control-panel-label {
@@ -40,6 +42,27 @@ p {
   border-radius: 5px;
   font-size: 1em;
   border: 1px solid black;
+}
+
+.control-panel .on-off-group {
+
+
+}
+
+.control-panel .heading-group {
+  position: absolute;
+  left: 50%;
+  width: 150px;
+  font-size: 1.5em;
+  text-align: center;
+  margin-left: -75px;
+  font-weight: 300;
+  padding: 7px;
+}
+
+.control-panel .spec-group {
+  position: absolute;
+  right: 10px;
 }
 
 /**
