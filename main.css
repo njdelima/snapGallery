@@ -28,6 +28,18 @@ p {
   display: inline-block;
   width: 60px;
   text-align: center;
+  vertical-align: middle;
+}
+
+.control-panel-input {
+  width: 40px;
+  display: inline-block;
+  padding: 12px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1em;
+  border: 1px solid black;
 }
 
 /**
