@@ -78,14 +78,13 @@
 				});
 				$("#width-spec").change(function() {
 					$('#gallery-container').snapGallery({
-						minWidth: $(this).val();
+						minWidth: $(this).val()
 					});
 				});
 
 				$("#columns-spec").change(function() {
-					console.log("Made it");
 					$('#gallery-container').snapGallery({
-						maxCols: 2;
+						maxCols: $(this).val()
 					});
 				});
 			});
