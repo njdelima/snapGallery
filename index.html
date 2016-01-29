@@ -77,16 +77,16 @@
 					}
 				});
 				$("#width-spec").change(function() {
-					console.log("Made it! value = " + $(this).val());
 					$('#gallery-container').snapGallery({
-						minWidth: parseInt($(this).val())
+						minWidth: parseInt($(this).val()),
+						maxCols: parseInt($('#columns-spec').val())
 					});
 				});
 
 				$("#columns-spec").change(function() {
-					console.log("Made it! value = " + $(this).val());
 					$('#gallery-container').snapGallery({
-						maxCols: parseInt($(this).val())
+						maxCols: parseInt($(this).val()),
+						minWidth: parseInt($('#width-spec').val())
 					});
 				});
 			});
