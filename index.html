@@ -86,7 +86,7 @@
 				$("#columns-spec").change(function() {
 					console.log("Made it! value = " + $(this).val());
 					$('#gallery-container').snapGallery({
-						maxCols: 2
+						maxCols: $(this).val()
 					});
 				});
 			});
