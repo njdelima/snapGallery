@@ -77,12 +77,14 @@
 					}
 				});
 				$("#width-spec").change(function() {
+					console.log("Made it!");
 					$('#gallery-container').snapGallery({
 						minWidth: $(this).val()
 					});
 				});
 
 				$("#columns-spec").change(function() {
+					console.log("Made it!");
 					$('#gallery-container').snapGallery({
 						maxCols: $(this).val()
 					});
