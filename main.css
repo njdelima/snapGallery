@@ -47,8 +47,9 @@ p {
 }
 
 .control-panel .on-off-group {
-
-
+  position: absolute;
+  left: 10px;
+  
 }
 
 .control-panel .heading-group {
