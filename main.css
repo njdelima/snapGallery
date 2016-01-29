@@ -15,6 +15,13 @@ p {
 	font-family: 'PT Sans', sans-serif;
 	line-height: 150%;
 }
+.control-panel {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: #000;
+  background-color: #ccc;
+}
 
 /**
  * Toggle button rules
@@ -67,7 +74,7 @@ p {
   padding: 2px;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
-  border: 1px solid #e8eae9;
+//  border: 1px solid #e8eae9;
 }
 .tgl-ios + .tgl-btn:after {
   border-radius: 0.2em;
