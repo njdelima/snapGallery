@@ -49,9 +49,11 @@ p {
 .control-panel .on-off-group {
   position: absolute;
   left: 10px;
+}
+.control-panel .on-off-group .control-panel-label {
   vertical-align: top;
   padding-top: 15px;
-  margin-right: 5px; 
+  margin-right: 5px;
 }
 
 .control-panel .heading-group {
