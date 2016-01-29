@@ -79,14 +79,14 @@
 				$("#width-spec").change(function() {
 					console.log("Made it! value = " + $(this).val());
 					$('#gallery-container').snapGallery({
-						minWidth: $(this).val()
+						minWidth: parseInt($(this).val())
 					});
 				});
 
 				$("#columns-spec").change(function() {
 					console.log("Made it! value = " + $(this).val());
 					$('#gallery-container').snapGallery({
-						maxCols: $(this).val()
+						maxCols: parseInt($(this).val())
 					});
 				});
 			});
