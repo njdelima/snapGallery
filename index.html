@@ -62,7 +62,9 @@
 	<script src="./snapGallery.js"></script>
 	<script>
 		$(function() {
-			$('#gallery-container').snapGallery();
+			$('#gallery-container').snapGallery({
+				maxCols: 2
+			});
 		})
 	</script>
 	<script>
@@ -72,8 +74,8 @@
 					if (this.checked) {
 						$('#gallery-container').snapGallery();
 					} else {
-						$('#gallery-container').removeAttr('style');
-						$('#gallery-container *').removeAttr('style');
+					//	$('#gallery-container').removeAttr('style');
+					//	$('#gallery-container *').removeAttr('style');
 					}
 				});
 				$("#width-spec").change(function() {
