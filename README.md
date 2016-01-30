@@ -6,9 +6,9 @@ Completely responsive and customizable, snapGallery allows you to select the spa
 
 ## [View the plugin homepage with a live demonstration!](http://128.61.104.207:2016/snapGallery/)
 
-### Download
+## Download
 
-**Recommended:** Download the script from [here](http://128.61.104.207:2016/snapGallery/snapGallery.js) and 
+**Recommended:** Download the script from [here](http://128.61.104.207:2016/snapGallery/snapGallery.js) 
 
 Not recommended: link to the script
 
