@@ -183,6 +183,29 @@ p {
   margin-left: -.8em;
 }
 
+h2 {
+
+  font-family: Oswald, sans-serif;
+  font-size: 2em;
+}
+
+p.usage {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+pre {
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.1);
+  border: 2px solid black;
+}
+
+code {
+  line-height: 140%;
+}
+
+
 @media screen and (max-width: 796px) {
   body {
     padding: 0;
