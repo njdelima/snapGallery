@@ -5,7 +5,7 @@
 	}
 	
 	$( window ).resize(function() {
-		alert($(window).width());
+		console.log("Current window width = " + $(window).width());
 		$('#gallery-container').snapGallery();
 	});
 
