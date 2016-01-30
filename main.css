@@ -225,6 +225,7 @@ hr#end-line {
 .footer-content a.footer-product-link {
   color: white;
   text-decoration: none;
+  margin-right: 5px;
 }
 .footer-content a.footer-product-link:hover {
   color: #551A8B;
