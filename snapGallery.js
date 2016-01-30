@@ -10,7 +10,11 @@
 	$( window ).resize(function() {
 		console.log("Current window width = " + $(window).width());
 
-		$('#gallery-container').snapGallery();
+		$('#gallery-container').snapGallery({
+			minWidth: minWidth,
+			maxCols: maxCols,
+			margin: margin
+		});
 	});
 
 	$.fn.snapGallery = function(options) {
