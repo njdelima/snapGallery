@@ -222,11 +222,18 @@ hr#end-line {
   text-align: right;
 }
 
-.footer-content a {
+.footer-content a.footer-product-link {
+  color: white;
+}
+.footer-content a.footer-product-link:hover {
+  color: #551A8B;
+}
+
+.footer-content a.footer-personal-link {
   text-decoration: none;
 }
 
-.footer-content a:hover {
+.footer-content a.footer-personal-link:hover {
   text-decoration: underline;
 }
 
