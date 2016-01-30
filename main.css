@@ -207,12 +207,28 @@ pre {
 code {
   line-height: 140%;
 }
+hr#end-line {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
 
 .footer-content {
   font-family: "PT Sans", sans-serif;
   display: inline-block;
+  width: 49%;
 }
 
+.footer-content:last-child {
+  text-align: right;
+}
+
+.footer-content a {
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
 
 
 @media screen and (max-width: 796px) {
