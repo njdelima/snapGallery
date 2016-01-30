@@ -11,7 +11,7 @@ h1 {
   display: inline-block;
 }
 
-a.download-button {
+a.download-button, a.github-button {
   text-decoration: none;
   color: white;
   float: right;
