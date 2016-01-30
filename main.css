@@ -186,7 +186,8 @@ p {
 h2 {
 
   font-family: Oswald, sans-serif;
-  font-size: 2em;
+  font-size: 2.5em;
+  text-align: center;
 }
 
 p.usage {
@@ -199,6 +200,7 @@ pre {
   border-radius: 10px;
   background: rgba(255,255,255,0.1);
   border: 2px solid black;
+  overflow: auto;
 }
 
 code {
