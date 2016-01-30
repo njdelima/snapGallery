@@ -120,7 +120,9 @@
 	<script>
 		$(function() {
 			$('#gallery-container').snapGallery({
-				minWidth: 0
+				minWidth: parseInt($('#width-spec').val()),
+				maxCols: parseInt($('#columns-spec').val()),
+				margin: parseInt($('#margin-spec').val())
 			});
 		})
 	</script>
@@ -129,7 +131,11 @@
 			$(document).ready(function() {
 				$("#main-toggle").change(function() {
 					if (this.checked) {
-						$('#gallery-container').snapGallery();
+						$('#gallery-container').snapGallery({
+							minWidth: parseInt($('#width-spec').val()),
+							maxCols: parseInt($('#columns-spec').val()),
+							margin: parseInt($('#margin-spec').val())
+						});
 					} else {
 						$('#gallery-container').removeAttr('style');
 						$('#gallery-container *').removeAttr('style');
