@@ -215,6 +215,7 @@ hr#end-line {
   font-family: "PT Sans", sans-serif;
   display: inline-block;
   width: 49%;
+  vertical-align: top;
 }
 
 .footer-content:last-child {
@@ -224,7 +225,6 @@ hr#end-line {
 .footer-content a.footer-product-link {
   color: white;
   text-decoration: none;
-  margin-right: 10px;
 }
 .footer-content a.footer-product-link:hover {
   color: #551A8B;
