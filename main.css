@@ -13,7 +13,7 @@ h1 {
 div.links-panel {
   display: inline-block;
   float: right;
-  margin-top: 25px;
+  margin-top: 40px;
 }
 a.download-button {
   text-decoration: none;
@@ -38,6 +38,10 @@ a.github-button {
 
 a.download-button:hover {
   background-color: #355088;
+}
+
+a.github-button:hover {
+  background-color: #222;
 }
 
 p {
