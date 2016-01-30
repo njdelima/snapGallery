@@ -10,11 +10,14 @@ h1 {
   margin-top: 0;
   display: inline-block;
 }
-
-a.download-button, a.github-button {
+div.links-panel {
+  display: inline-block;
+  float: right;
+  margin-top: 25px;
+}
+a.download-button {
   text-decoration: none;
   color: white;
-  float: right;
   text-decoration: none;
   color: #FFF;
   float: right;
@@ -23,7 +26,6 @@ a.download-button, a.github-button {
   font-family: Oswald, sans-serif;
   font-size: 1.2em;
   border-radius: 44px;
-  margin-top: 25px;
 }
 
 a.download-button:hover {
