@@ -15,6 +15,18 @@ a.download-button {
   text-decoration: none;
   color: white;
   float: right;
+  text-decoration: none;
+  color: #FFF;
+  float: right;
+  background: #3B5998;
+  padding: 15px 35px;
+  font-family: Oswald, sans-serif;
+  font-size: 1.2em;
+  border-radius: 44px;
+}
+
+a.download-button:hover {
+  background-color:  #2F4779;
 }
 
 p {
