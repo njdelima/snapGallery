@@ -38,11 +38,11 @@ a.github-button {
 
 a.download-button:hover {
 //  background-color: #355088;
-  background-color: #2a4887;
+  background-color: rgba(59,89,152,0.3);
 }
 
 a.github-button:hover {
-  background-color: #222;
+  background-color: rgba(51,51,51,0.3);
 }
 
 p {
