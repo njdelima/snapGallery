@@ -38,7 +38,7 @@
 				<label for="columns-spec" class="control-panel-label">Max Columns</label>
 	    		<input class="control-panel-input" type="number" min="1" step="1" id="columns-spec" value="3" />
 	    		<label for="width-spec" class="control-panel-label">Min Width</label>
-	    		<input class="control-panel-input" type="number" min="0" step="1" id="width-spec" value="300" />
+	    		<input class="control-panel-input" type="number" min="0" step="1" id="width-spec" value="0" />
 	    		<label for="margin-spec" class="control-panel-label">Margin</label>
 	    		<input class="control-panel-input" type="number" min="0" step="1" id="margin-spec" value="10" />
 	    	</span>
@@ -119,7 +119,9 @@
 	<script src="./snapGallery.js"></script>
 	<script>
 		$(function() {
-			$('#gallery-container').snapGallery();
+			$('#gallery-container').snapGallery({
+				minWidth: 0
+			});
 		})
 	</script>
 	<script>
