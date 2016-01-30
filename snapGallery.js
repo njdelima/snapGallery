@@ -3,9 +3,13 @@
 	if (!$) {
 		return console.warn("snapGallery needs jQuery!");
 	}
-	
+	var minWidth = 300;
+	var maxCols = 3;
+	var margin = 10;
+
 	$( window ).resize(function() {
 		console.log("Current window width = " + $(window).width());
+
 		$('#gallery-container').snapGallery();
 	});
 
@@ -17,6 +21,10 @@
 			minWidth: 300,
 			preserveOrder: true
 		}, options);
+
+		minWidth = settings.minWidth;
+		maxCols = settings.maxCols;
+		margin = settings.margin;
 
 		var containerWidth = this.outerWidth();
 		console.log("containerWidth = " + containerWidth);
