@@ -14,9 +14,7 @@ h1 {
 a.download-button {
   text-decoration: none;
   color: white;
-  position: absolute;
-  top: 50px;
-  right: 50px;
+  float: right;
 }
 
 p {
