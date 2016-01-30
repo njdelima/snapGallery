@@ -218,7 +218,23 @@ p {
     width: 100%;
     margin-top: 25px;
   }
+  .control-panel .on-off-group {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+  .control-panel .heading-group {
+    display: none;
+  }
 
+  .control-panel .spec-group {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 423px) {
   .control-panel .on-off-group {
     display: block;
     width: 100%;
@@ -239,6 +255,8 @@ p {
     margin-top: 15px;
   }
 }
+
+
 
 
 
