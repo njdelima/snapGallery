@@ -208,10 +208,9 @@ p {
 
   a.github-button, a.download-button {
     font-size: 1em;
-    width: 75%;
+    width: 85px;
     display: inline-block;
     text-align: center;
-    max-width: 85px;
     margin-bottom: 10px;
   }
 
