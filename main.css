@@ -193,7 +193,6 @@ h2 {
 p.usage {
   font-size: 1.1em;
   font-weight: 600;
-  padding-left: 1em;
 }
 
 pre {
@@ -224,6 +223,8 @@ hr#end-line {
 
 .footer-content a.footer-product-link {
   color: white;
+  text-decoration: none;
+  margin-right: 10px;
 }
 .footer-content a.footer-product-link:hover {
   color: #551A8B;
