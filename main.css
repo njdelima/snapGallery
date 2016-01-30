@@ -219,7 +219,26 @@ p {
     margin-top: 25px;
   }
 
+  .on-off-group {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 
+  .heading-group {
+    text-align: center;
+    width: 48%;
+    display: inline-block;
+    margin-top: 50px;
+  }
+
+  .spec-group {
+    width: 50%;
+    text-align: right;
+    display: inline-block;
+    margin-top: 15px;
+  }
+  
 
 
 }
