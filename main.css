@@ -183,3 +183,41 @@ p {
 .tgl-ios:checked + .tgl-btn:active:after {
   margin-left: -.8em;
 }
+
+@media screen and (max-width: 796px) {
+  body {
+    padding: 0;
+    padding-top: 25px;
+  }
+
+  h1 {
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+  }
+
+  div.links-panel {
+    margin-top: 0;
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  a.github-button {
+    margin-right: 5px;
+  }
+
+  a.github-button, a.download-button {
+    font-size: 1em;
+    width: 85px;
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
