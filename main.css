@@ -28,6 +28,11 @@ a.download-button {
 a.github-button {
   text-decoration: none;
   color: white;
+  background: #666;
+  padding: 15px 35px;
+  font-family: Oswald, sans-serif;
+  font-size: 1.2em;
+  border-radius: 44px;
 }
 
 a.download-button:hover {
