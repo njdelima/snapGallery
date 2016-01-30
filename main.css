@@ -18,14 +18,16 @@ div.links-panel {
 a.download-button {
   text-decoration: none;
   color: white;
-  text-decoration: none;
-  color: #FFF;
-  float: right;
   background: #3B5998;
   padding: 15px 35px;
   font-family: Oswald, sans-serif;
   font-size: 1.2em;
   border-radius: 44px;
+}
+
+a.github-button {
+  text-decoration: none;
+  color: white;
 }
 
 a.download-button:hover {
