@@ -208,6 +208,12 @@ code {
   line-height: 140%;
 }
 
+.footer-content {
+  font-family: "PT Sans", sans-serif;
+  display: inline-block;
+}
+
+
 
 @media screen and (max-width: 796px) {
   body {
