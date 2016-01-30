@@ -28,7 +28,7 @@
 
 		DEFINED_MIN_WIDTH = settings.minWidth;
 		DEFINED_MAX_COLS = settings.maxCols;
-		DEFINED_MARGIN = settings/.margin;
+		DEFINED_MARGIN = settings.margin;
 
 		var containerWidth = this.outerWidth();
 		console.log("containerWidth = " + containerWidth);
