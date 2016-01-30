@@ -3,17 +3,17 @@
 	if (!$) {
 		return console.warn("snapGallery needs jQuery!");
 	}
-	var minWidth = 300;
-	var maxCols = 3;
-	var margin = 10;
+	var DEFINED_MIN_WIDTH = 300;
+	var DEFINED_MAX_COLS = 3;
+	var DEFINED_MARGIN = 10;
 
 	$( window ).resize(function() {
 		console.log("Current window width = " + $(window).width());
 
 		$('#gallery-container').snapGallery({
-			minWidth: minWidth,
-			maxCols: maxCols,
-			margin: margin
+			minWidth: DEFINED_MIN_WIDTH,
+			maxCols: DEFINED_MAX_COLS,
+			margin: DEFINED_MARGIN
 		});
 	});
 
@@ -26,9 +26,9 @@
 			preserveOrder: true
 		}, options);
 
-		minWidth = settings.minWidth;
-		maxCols = settings.maxCols;
-		margin = settings.margin;
+		DEFINED_MIN_WIDTH = settings.minWidth;
+		DEFINED_MAX_COLS = settings.maxCols;
+		DEFINED_MARGIN = settings/.margin;
 
 		var containerWidth = this.outerWidth();
 		console.log("containerWidth = " + containerWidth);
