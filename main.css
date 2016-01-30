@@ -54,10 +54,7 @@ p {
   margin-bottom: 10px;
   padding: 10px;
   color: #000;
-  background-color: #ccc;
   font-family: Oswald, sans-serif;
-  position: relative;
-  height: 50px;
   border: 2px solid black;
   background-color: rgba(255,255,255,0.2);
 }
@@ -81,8 +78,9 @@ p {
 }
 
 .control-panel .on-off-group {
-  position: absolute;
-  left: 10px;
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
 }
 .control-panel .on-off-group .control-panel-label {
   vertical-align: top;
@@ -91,18 +89,19 @@ p {
 }
 
 .control-panel .heading-group {
-  position: absolute;
-  left: 50%;
-  width: 150px;
   font-size: 1.8em;
   text-align: center;
-  margin-left: -75px;
   font-weight: 300;
+  display: inline-block;
+  width: 38%;
+  vertical-align: top;
 }
 
 .control-panel .spec-group {
-  position: absolute;
-  right: 10px;
+  display: inline-block;
+  width: 35%;
+  text-align: right;
+  vertical-align: top;
 }
 
 /**
@@ -213,6 +212,16 @@ p {
     display: inline-block;
     text-align: center;
   }
+
+  p {
+    text-align: center;
+    width: 100%;
+    margin-top: 25px;
+  }
+
+
+
+
 }
 
 
