@@ -37,7 +37,8 @@ a.github-button {
 }
 
 a.download-button:hover {
-  background-color: #355088;
+//  background-color: #355088;
+  background-color: #2a4887;
 }
 
 a.github-button:hover {
