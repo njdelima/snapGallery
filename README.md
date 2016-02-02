@@ -4,16 +4,16 @@ snapGallery is a super-simple jQuery plugin that converts your unordered, haphaz
 
 Completely responsive and customizable, snapGallery allows you to select the spacing between images, the minimum width allowed before stacking and the maximum number of columns, with more options on the way!
 
-## [View the plugin homepage with a live demonstration!](http://128.61.104.207:2016/snapGallery/)
+## [View the plugin homepage with a live demonstration!](http://neerajdelima.ga/snapGallery/)
 
 ## Download
 
-**Recommended:** Download the script from [here](http://128.61.104.207:2016/snapGallery/snapGallery.js) 
+**Recommended:** Download the script from [here](http://neerajdelima.ga/snapGallery/snapGallery.js) 
 
 Not recommended: link to the script
 
 ```html
-<script src="http://128.61.104.207:2016/snapGallery/snapGallery.js"></script>
+<script src="http://neerajdelima.ga/snapGallery/snapGallery.js"></script>
 ```
 
 ### Usage
