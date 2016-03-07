@@ -29,7 +29,7 @@
 		<div class="control-panel">
 			<span class="on-off-group">
 				<label class="control-panel-label">Off / On</label>
-				<input class='tgl tgl-ios' id='main-toggle' type='checkbox'>
+				<input class='tgl tgl-ios' id='main-toggle' type='checkbox' checked="checked">
     			<label class='tgl-btn' for='main-toggle'></label>
     		</span>
     		<span class="heading-group">snapGallery</span>
@@ -118,13 +118,15 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="./snapGallery.js"></script>
 	<script>
-		$(function() {
-			$('#gallery-container').snapGallery({
-				minWidth: parseInt($('#width-spec').val()),
-				maxCols: parseInt($('#columns-spec').val()),
-				margin: parseInt($('#margin-spec').val())
-			});
-		})
+		$(document).ready(function() {
+			$(function() {
+				$('#gallery-container').snapGallery({
+					minWidth: parseInt($('#width-spec').val()),
+					maxCols: parseInt($('#columns-spec').val()),
+					margin: parseInt($('#margin-spec').val())
+				});
+			})
+		});
 	</script>
 	<script>
 		$(function() {
@@ -164,8 +166,6 @@
 						maxCols: parseInt($('#columns-spec').val())
 					});
 				});
-
-				$(this).prop("checked", true);
 			});
 		});
 	</script>
