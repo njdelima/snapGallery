@@ -134,6 +134,7 @@
 			$(document).ready(function() {
 				$("#main-toggle").change(function() {
 					if (this.checked) {
+						console.log("HEIGHT = " + $(document).outerHeight());
 						$('#gallery-container').snapGallery({
 							minWidth: parseInt($('#width-spec').val()),
 							maxCols: parseInt($('#columns-spec').val()),
