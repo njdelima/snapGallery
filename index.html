@@ -118,16 +118,17 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="./snapGallery.js"></script>
 	<script>
-		$(document).ready(function() {
-			$(function() {
+		$(function() {
+			$(window).load(function() {
+			
 				console.log("HEIGHT = " + $(document).outerHeight());
 				$('#gallery-container').snapGallery({
 					minWidth: parseInt($('#width-spec').val()),
 					maxCols: parseInt($('#columns-spec').val()),
 					margin: parseInt($('#margin-spec').val())
 				});
-			})
-		});
+			});
+		})
 	</script>
 	<script>
 		$(function() {
