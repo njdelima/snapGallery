@@ -43,10 +43,25 @@ Call the plugin & watch the magic happen!
 
 ```javascript
 $(function() {
-  $('#gallery-container').snapGallery();
+	$(window).load(function() {
+		$('#gallery-container').snapGallery();
+	});
 })
 ```
 
+You can also provide parameters to customize the layout to your needs:
+
+```javascript
+$(function() {
+	$(window).load(function() {
+		$('#gallery-container').snapGallery({
+			minWidth: 100,
+			maxCols: 4,
+			margin: 7
+		});
+	});
+})
+```
 
 ### Demo
 
